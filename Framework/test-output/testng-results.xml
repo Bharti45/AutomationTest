@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="4" failed="1" total="5" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Home Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Organization Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Create new organization page is Displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="119091" started-at="2018-12-26T06:53:29Z" finished-at="2018-12-26T06:55:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="119091" started-at="2018-12-26T06:53:29Z" finished-at="2018-12-26T06:55:28Z">
+      <class name="com.crm.organization.CreateOrganisation">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBC" is-config="true" duration-ms="10882" started-at="2018-12-26T12:23:29Z" finished-at="2018-12-26T12:23:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBM" is-config="true" duration-ms="11044" started-at="2018-12-26T12:23:40Z" finished-at="2018-12-26T12:23:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="FAIL" signature="createCustomerTest()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="createCustomerTest" duration-ms="20429" started-at="2018-12-26T12:23:51Z" finished-at="2018-12-26T12:24:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.crm.organization.CreateOrganisation.createCustomerTest(CreateOrganisation.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Home Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Organization Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Create new organization page is Displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomerTest -->
+        <test-method status="FAIL" signature="configAM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAM" is-config="true" duration-ms="0" started-at="2018-12-26T12:24:12Z" finished-at="2018-12-26T12:24:12Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 75.91 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Dell', ip: '127.0.0.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f1d1e3eb-5bc6-473f-a786-6c88d1c4ca96]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+Command duration or timeout: 75.91 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Dell', ip: '127.0.0.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f1d1e3eb-5bc6-473f-a786-6c88d1c4ca96
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
+	at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:39)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:50)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:373)
+	at com.crm.objectrepositoryLib.Home.logout(Home.java:49)
+	at com.crm.genericLib.BaseClass.configAM(BaseClass.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:32:46'
+System info: host: 'Dell', ip: '127.0.0.1', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:9454)
+	at <anonymous class>.Utils.getElementAt(file:///C:/Users/User/AppData/Local/Temp/anonymous8215285623240406903webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9039)
+	at <anonymous class>.fxdriver.events.buildCoordinates(file:///C:/Users/User/AppData/Local/Temp/anonymous8215285623240406903webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10275)
+	at <anonymous class>.FirefoxDriver.prototype.mouseMoveTo(file:///C:/Users/User/AppData/Local/Temp/anonymous8215285623240406903webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11068)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/User/AppData/Local/Temp/anonymous8215285623240406903webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/User/AppData/Local/Temp/anonymous8215285623240406903webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="createOrganizationWithAnnualRevenueTest()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="createOrganizationWithAnnualRevenueTest" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithAnnualRevenueTest -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="createOrganizationWithDescriptionTest()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="createOrganizationWithDescriptionTest" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithDescriptionTest -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configBM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configBM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="SKIP" signature="createOrganizationwithAssignedToAsGroupTest()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="createOrganizationwithAssignedToAsGroupTest" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationwithAssignedToAsGroupTest -->
+        <test-method status="SKIP" signature="createOrganizationWithTypeFieldTest()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="createOrganizationWithTypeFieldTest" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganizationWithTypeFieldTest -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAC" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.crm.organization.CreateOrganisation@5e3a8624]" name="configAM" is-config="true" duration-ms="0" started-at="2018-12-26T12:25:28Z" finished-at="2018-12-26T12:25:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+      </class> <!-- com.crm.organization.CreateOrganisation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
